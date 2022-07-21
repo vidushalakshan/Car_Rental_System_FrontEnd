@@ -141,6 +141,29 @@
             height: 50px;
         }
 
+        #exampleInputName{
+            width: 50%;
+        }
+
+        #exampleInputEmail1{
+            width: 50%;
+        }
+
+        #exampleInputPoneNumber{
+            width: 50%;
+        }
+
+        #validationTextarea{
+            width: 50%;
+        }
+
+        #form1{
+            position: relative;
+            left: 25%;
+        }
+
+
+
 
     </style>
 
@@ -308,10 +331,10 @@
 
         <!--start contact content-->
         <h1>Contact Us</h1>
-        <form>
-            <div class="mb-3 ">
+        <form id="form1">
+            <div class="mb-3">
                 <label for="exampleInputName" class="form-label">Full name</label>
-                <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp" >
             </div>
             <div class="mb-3 ">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -327,10 +350,6 @@
                 <div class="invalid-feedback">
                     Please enter a message in the textarea.
                 </div>
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
