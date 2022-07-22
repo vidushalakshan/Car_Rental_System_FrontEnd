@@ -22,11 +22,11 @@
             top: 0;
             bottom: 0;
             left: 0;
-            z-index:11;
+            z-index: 1;
             width: 260px;
             overflow:auto;
             transition:all 0.3s ;
-            background: rgba(2, 2, 5, 0.7);
+            background: rgba(4, 4, 9, 0.7);
             box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
         }
 
@@ -71,7 +71,7 @@
         }
 
         #sidebar ul li a:hover{
-            color: #333;
+            color: #053a93;
             background-color: rgba(200, 200, 200, 0.2);
         }
 
@@ -81,7 +81,7 @@
             border-radius:5px;
             font-size: 15px;
             position:relative;'
-        font-weight: 400;
+            font-weight: 400;
             display: block;
         }
 
@@ -130,22 +130,35 @@
             height: 66px;
         }
 
+        #navimage:hover{
+            width: 88px;
+            height: 68px;
+        }
+
+        .dashboard1{
+            width: 74%;
+            position: relative;
+            left: 338px;
+            top: 115px;
+        }
+
+
     </style>
 </head>
 <body>
-<div class=>
+<div class="container">
     <!-- Sidebar  -->
     <nav id="sidebar">
         <div class="sidebar-header" >
             <h3><img  id="titleImg" class="img-fluid" src="assets/image/slider/3GOBoJ.webp"/><span id="titletxt">Car Rental</span></h3>
         </div>
         <ul class="list-unstyled components" id="customers">
-            <li class="">
-                <a href="#"><img src="assets/image/slider/dashboard.png" width="50" height="45"><span>Dashboard</span></a>
+            <li class="" id="dashboardlink">
+                <a href="#"><img src="assets/image/slider/dashboard.png" width="50" height="45" ><span>Dashboard</span></a>
             </li>
 
-            <li class="">
-                <a href="#"><img src="assets/image/slider/admin%20(2).png" width="50" height="45"><span>Admin</span></a>
+            <li class="" id="adminlink">
+                <a href="#"><img src="assets/image/slider/admin%20(2).png" width="50" height="45" ><span>Admin</span></a>
             </li>
             <li class="">
                 <a href="#"><img src="assets/image/slider/admin%20(2).png" width="50" height="45"><span>Drivers</span></a>
@@ -182,5 +195,71 @@
 
 <!--end top naw bar section-->
 
+<!--start Dashboard section-->
+<div class="row row-cols-1 row-cols-md-3 g-3 dashboard1" id="dashboard" >
+    <div class="col" id="col1">
+        <div class="card">
+            <h1>ADMIN</h1>
+            <div class="card-body">
+                <h1>3</h1>
+                <button class="btn btn-primary btn-lg" type="button" >View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <h1>DRIVERS</h1>
+            <div class="card-body">
+                <h1>3</h1>
+                <button class="btn btn-primary btn-lg" type="button">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <h1>CUSTOMERS</h1>
+            <div class="card-body">
+                <h1>25</h1>
+                <button class="btn btn-primary btn-lg" type="button">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <h1>CARS</h1>
+            <div class="card-body">
+                <h1>30</h1>
+                <button class="btn btn-primary btn-lg" type="button">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <h1>BOOKING</h1>
+            <div class="card-body">
+                <h1>7</h1>
+                <button class="btn btn-primary btn-lg" type="button">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <h1>PAYMENT</h1>
+            <div class="card-body">
+                <h1>4</h1>
+                <button class="btn btn-primary btn-lg" type="button">View Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="drivers">
+    <h1>drivers</h1>
+</div>
+
+
+<!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/script/script.js"></script>
 </body>
 </html>
