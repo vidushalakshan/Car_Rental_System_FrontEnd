@@ -193,6 +193,23 @@
             top: 50px;
         }
 
+        #car > form >div {
+            width: 82%;
+            position: relative;
+            left: 23%;
+        }
+
+        #cartbl {
+            position: relative;
+            width: 80%;
+            left: 11%;
+        }
+
+        #carbtn {
+            position: relative;
+            right: 6%;
+        }
+
 
     </style>
 </head>
@@ -535,6 +552,7 @@
             <th scope="col">Mobile_Number</th>
             <th scope="col">Email</th>
             <th scope="col">Image</th>
+            <th scope="col">Status</th>
             <th scope="col">Actions</th>
         </tr>
         </thead>
@@ -548,12 +566,164 @@
             <td>@mdo</td>
             <td>@mdo</td>
             <td>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Enable</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Disable</label>
+                </div>
+            </td>
+            <td>
                 <button class="btn btn-danger badge rounded-pill" style="width: 80px;" type="button">Delete</button>
             </td>
         </tr>
         </tbody>
     </table>
 </section>
+
+<!--
+end driver section
+-->
+
+<section class="container" id="car">
+
+    <!--start form section-->
+
+    <form class="col-md-auto">
+        <div class="card col-12 mx-1">
+            <div class="card-body">
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="exampleInputCarID">Register_Number :</label>
+                    <input aria-describedby="orderId" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="exampleInputCarID" type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2">
+                    <label class="form-label" for="exampleInputCarAvailable">Car_Availability :</label>
+                    <input aria-describedby="orderDate"
+                           class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id=exampleInputCarAvailable type="text">
+                </div>
+
+                <div class="mx-3 mt-2 col-5 d-inline-block">
+                    <label class="form-label" for="exampleInputCarBrand">Car_Brand :</label>
+                    <select class="form-select btn-outline-primary bg-light bg-opacity-50 text-dark"
+                            id="exampleInputCarBrand" type="text">
+                    </select>
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="txtMObileCarType">Car_Type :</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="txtMObileCarType"
+                           type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="txtCarColor">Car_Color :</label>
+                    <input aria-describedby="orderId" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="txtCarColor" type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="txtCarTransmission">Transmission Type :</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="txtCarTransmission"
+                           type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="formNo_Of_Passanger">No_Of_Passanger</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="formNo_Of_Passanger"
+                           type="text">
+                </div>
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="formDaily_Rate">Daily_Rate</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="formDaily_Rate"
+                           type="text">
+                </div>
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="formMonthly_Rate">Monthly_Rate</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="formMonthly_Rate"
+                           type="text">
+                </div>
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="formPrice_ExtraKM">Price_ExtraKM</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="formPrice_ExtraKM"
+                           type="text">
+                </div>
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="formDamage_Price">Damage_Price</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="formDamage_Price"
+                           type="text">
+                </div>
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="formImage">Image</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="formImage"
+                           type="file">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- end form section-->
+
+    <br><br>
+
+    <!-- start driver button section-->
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="carbtn">
+        <button class="btn btn-outline-primary" id="btnCarSave" type="button">Save & Update</button>
+        <button class="btn btn-outline-info" id="btnCarClear" type="button">Clear</button>
+    </div>
+    <br><br>
+
+    <!-- end driver button section-->
+
+    <!--start Driver table section-->
+    <section class="container">
+        <table class="table table-primary table-hover table-bordered" id="cartbl">
+            <thead>
+            <tr>
+                <th scope="col">RegisterNum</th>
+                <th scope="col">Availability</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Type</th>
+                <th scope="col">Color</th>
+                <th scope="col">TransmissionType</th>
+                <th scope="col">NoOfPassanger</th>
+                <th scope="col">Daily_Rate</th>
+                <th scope="col">Monthly_Rate</th>
+                <th scope="col">Price_ExtraKM</th>
+                <th scope="col">Damage_Price</th>
+                <th scope="col">Image</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>
+                    <button class="btn btn-danger badge rounded-pill" style="width: 80px;" type="button">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--end Driver table section-->
+</section>
+
 
 
 
@@ -564,12 +734,14 @@
     $("#admin").css("display", "none");
     $("#driver").css("display", "none");
     $("#customer").css("display", "none");
+    $("#car").css("display", "none");
 
     $("#dashboardlink").click(function () {
         $("#dashboard").css("display", "");
         $("#admin").css("display", "none");
         $("#driver").css("display", "none");
         $("#customer").css("display", "none");
+        $("#car").css("display", "none");
     });
 
     $("#adminlink").click(function () {
@@ -577,6 +749,7 @@
         $("#admin").css("display", "block");
         $("#driver").css("display", "none");
         $("#customer").css("display", "none");
+        $("#car").css("display", "none");
     });
 
     $("#driverlink").click(function () {
@@ -584,6 +757,7 @@
         $("#admin").css("display", "none");
         $("#driver").css("display", "block");
         $("#customer").css("display", "none");
+        $("#car").css("display", "none");
     });
 
     $("#linkCustomers").click(function () {
@@ -591,6 +765,15 @@
         $("#admin").css("display", "none");
         $("#driver").css("display", "none");
         $("#customer").css("display", "block");
+        $("#car").css("display", "none");
+    });
+
+    $("#linkCars").click(function () {
+        $("#dashboard").css("display", "none");
+        $("#admin").css("display", "none");
+        $("#driver").css("display", "none");
+        $("#customer").css("display", "none");
+        $("#car").css("display", "block");
     });
 
 </script>
