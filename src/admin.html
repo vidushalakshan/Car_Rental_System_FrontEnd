@@ -143,6 +143,12 @@
             top: 115px;
         }
 
+        #admin > form >div {
+            width: 82%;
+            position: relative;
+            left: 19%;
+        }
+
 
     </style>
 </head>
@@ -254,10 +260,76 @@
     </div>
 </div>
 
-<div id="drivers">
-    <h1>drivers</h1>
-</div>
+<section class="container" id="admin">>
+    <form class="col-md-auto">
+        <!--<div class="mb-3">
+            <label class="form-label fw-bold bg-white" for="exampleInputID">Admin_ID</label>
+            <input aria-describedby="emailHelp" class="form-control" id="exampleInputID"
+                   placeholder="Full Name"
+                   type="text">
+            <label class="form-label fw-bold bg-white" for="exampleInputName">Full Name</label>
+            <input aria-describedby="emailHelp" class="form-control" id="exampleInputName"
+                   placeholder="Email address"
+                   type="text">
+        </div>
+        <div class="mb-3">
+            <label class="form-label fw-bold bg-white" for="exampleInputAddress">Address</label>
+            <input aria-describedby="emailHelp" class="form-control" id="exampleInputAddress"
+                   placeholder="Email address"
+                   type="text">
+        </div>
+        <div class="mb-3">
+            <label class="form-label fw-bold bg-white" for="exampleInputPassword">Password</label>
+            <input aria-describedby="emailHelp" class="form-control" id="exampleInputPassword"
+                   placeholder="Phone number" type="text">
+        </div>-->
+        <div class="card col-12 mx-1">
+            <div class="card-body">
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="exampleInputID">Admin_ID :</label>
+                    <input aria-describedby="orderId" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="exampleInputID" type="text">
+                </div>
 
+                <div class="form-group col-5 d-inline-block m-lg-2">
+                    <label class="form-label" for="exampleInputName">Full Name :</label>
+                    <input aria-describedby="orderDate" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id=exampleInputName type="text">
+                </div>
+
+                <div class="mx-3 mt-2 col-5 d-inline-block">
+                    <label class="form-label" for="exampleInputAddress">Address :</label>
+                    <select class="form-select btn-outline-primary bg-light bg-opacity-50 text-dark"
+                            id="exampleInputAddress" type="text">
+                    </select>
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="txtMObileNumber">Mobile Number :</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id=txtMObileNumber
+                           type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="txtPassword">Password :</label>
+                    <input aria-describedby="orderId" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="txtPassword" type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="txtAdminEmail">Email :</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id=txtAdminEmail
+                           type="text">
+                </div>
+
+                <div class="form-group col-11 d-inline-block mx-lg-3 m-lg-2">
+                    <label for="formFile" class="form-label">Admin Image :</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
 
 <!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
