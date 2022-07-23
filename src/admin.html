@@ -186,6 +186,13 @@
             right: 6%;
         }
 
+        #customertbl {
+            position: relative;
+            width: 93%;
+            left: 14%;
+            top: 50px;
+        }
+
 
     </style>
 </head>
@@ -556,23 +563,34 @@
     $("#dashboard").css("display", "none");
     $("#admin").css("display", "none");
     $("#driver").css("display", "none");
+    $("#customer").css("display", "none");
 
     $("#dashboardlink").click(function () {
         $("#dashboard").css("display", "");
         $("#admin").css("display", "none");
         $("#driver").css("display", "none");
+        $("#customer").css("display", "none");
     });
 
     $("#adminlink").click(function () {
         $("#dashboard").css("display", "none");
         $("#admin").css("display", "block");
         $("#driver").css("display", "none");
+        $("#customer").css("display", "none");
     });
 
     $("#driverlink").click(function () {
         $("#dashboard").css("display", "none");
         $("#admin").css("display", "none");
         $("#driver").css("display", "block");
+        $("#customer").css("display", "none");
+    });
+
+    $("#linkCustomers").click(function () {
+        $("#dashboard").css("display", "none");
+        $("#admin").css("display", "none");
+        $("#driver").css("display", "none");
+        $("#customer").css("display", "block");
     });
 
 </script>
