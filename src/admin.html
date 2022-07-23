@@ -160,6 +160,10 @@
             left: 14%;
         }
 
+        #adminbtn {
+            position: relative;
+            right: 6%;
+        }
 
     </style>
 </head>
@@ -332,8 +336,14 @@
             </div>
         </div>
     </form>
+    <br><br>
 
     <!-- end form section-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="adminbtn">
+        <button class="btn btn-outline-primary" id="btnItemSave" type="button">Save & Update</button>
+        <button class="btn btn-outline-info" id="btnItemClear" type="button">Clear</button>
+    </div>
+    <br><br>
 
     <!--start admin table section-->
     <section class="container">
@@ -362,14 +372,12 @@
                 <td>
                     <button class="btn btn-danger badge rounded-pill" style="width: 80px;" type="button">Delete</button>
                 </td>
-
             </tr>
             </tbody>
         </table>
     </section>
 
 </section>
-
 <!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script src="assets/script/script.js"></script>
