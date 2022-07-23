@@ -180,24 +180,23 @@
                 <a href="#"><img height="45" src="assets/image/slider/dashboard.png"
                                  width="50"><span>Dashboard</span></a>
             </li>
-
             <li class="" id="adminlink">
                 <a href="#"><img height="45" src="assets/image/slider/admin%20(2).png" width="50"><span>Admin</span></a>
             </li>
-            <li class="">
+            <li class="" id="driverlink">
                 <a href="#"><img height="45" src="assets/image/slider/admin%20(2).png"
                                  width="50"><span>Drivers</span></a>
             </li>
-            <li class="">
+            <li class="" id="linkCustomers">
                 <a href="#"><img height="45" src="assets/image/slider/admin%20(2).png" width="50"><span>Customers</span></a>
             </li>
-            <li class="">
+            <li class="" id="linkCars">
                 <a href="#"><img height="45" src="assets/image/slider/car.png" width="50"><span>Cars</span></a>
             </li>
-            <li class="">
+            <li class="" id="linkBooking">
                 <a href="#"><img height="45" src="assets/image/slider/booking.png" width="50"><span>Booking</span></a>
             </li>
-            <li class="">
+            <li class="" id="linkPayment">
                 <a href="#"><img height="45" src="assets/image/slider/payment.png" width="50"><span>Payment</span></a>
             </li>
         </ul>
@@ -311,7 +310,7 @@
 
                 <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
                     <label class="form-label" for="txtMObileNumber">Mobile Number :</label>
-                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id=txtMObileNumber
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="txtMObileNumber"
                            type="text">
                 </div>
 
@@ -376,10 +375,92 @@
             </tbody>
         </table>
     </section>
-
 </section>
-<!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
+
+<section class="container" id="driver">
+    <!--start form section-->
+
+    <form class="col-md-auto">
+        <div class="card col-12 mx-1">
+            <div class="card-body">
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="exampleInputDriverID">Driver ID :</label>
+                    <input aria-describedby="orderId"
+                           class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="exampleInputDriverID" type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2">
+                    <label class="form-label" for="exampleInputDriverName">Full Name :</label>
+                    <input aria-describedby="orderDate"
+                           class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id=exampleInputDriverName type="text">
+                </div>
+
+                <div class="mx-3 mt-2 col-5 d-inline-block">
+                    <label class="form-label" for="exampleInputDriverAddress">Address :</label>
+                    <select class="form-select btn-outline-primary bg-light bg-opacity-50 text-dark"
+                            id="exampleInputDriverAddress" type="text">
+                    </select>
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="txtMObileDriverNumber">Mobile Number :</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="txtMObileDriverNumber"
+                           type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="txtPassword">Password :</label>
+                    <label class="form-label" for="txtDriverPassword">Password :</label>
+                    <input aria-describedby="orderId"
+                           class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="txtDriverPassword" type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="txtDriverEmail">Email :</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id=txtDriverEmail
+                           type="text">
+                </div>
+
+                <div class="form-group col-11 d-inline-block mx-lg-3 m-lg-1">
+                    <label class="form-label" for="formDriverFile">Driver Image :</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="formDriverFile"
+                           type="file">
+                </div>
+            </div>
+        </div>
+    </form>
+    <br><br>
+</section>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
-<script src="assets/script/script.js"></script>
+<script>
+    $("#dashboard").css("display", "none");
+    $("#admin").css("display", "none");
+    $("#driver").css("display", "none");
+
+    $("#dashboardlink").click(function () {
+        $("#dashboard").css("display", "");
+        $("#admin").css("display", "none");
+        $("#driver").css("display", "none");
+    });
+
+    $("#adminlink").click(function () {
+        $("#dashboard").css("display", "none");
+        $("#admin").css("display", "block");
+        $("#driver").css("display", "none");
+    });
+
+    $("#driverlink").click(function () {
+        $("#dashboard").css("display", "none");
+        $("#admin").css("display", "none");
+        $("#driver").css("display", "block");
+    });
+
+</script>
+
+<!--<script src="assets/script/script.js"></script>-->
 </body>
 </html>
