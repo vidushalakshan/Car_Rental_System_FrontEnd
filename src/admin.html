@@ -175,6 +175,17 @@
             width: 94%;
         }
 
+        #drivertbl {
+            position: relative;
+            width: 93%;
+            left: 14%;
+        }
+
+        #driverbtn {
+            position: relative;
+            right: 6%;
+        }
+
 
     </style>
 </head>
@@ -321,7 +332,8 @@
 
                 <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
                     <label class="form-label" for="txtMObileNumber">Mobile Number :</label>
-                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="txtMObileNumber"
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="txtMObileNumber"
                            type="text">
                 </div>
 
@@ -425,7 +437,8 @@
 
                 <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
                     <label class="form-label" for="txtMObileDriverNumber">Mobile Number :</label>
-                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark" id="txtMObileDriverNumber"
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="txtMObileDriverNumber"
                            type="text">
                 </div>
 
@@ -452,17 +465,54 @@
         </div>
     </form>
 
-   <!-- end form section-->
+    <!-- end form section-->
 
     <br><br>
 
-   <!-- start driver button section-->
+    <!-- start driver button section-->
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="driverbtn">
         <button class="btn btn-outline-primary" id="btnDriverSave" type="button">Save & Update</button>
         <button class="btn btn-outline-info" id="btnDriverClear" type="button">Clear</button>
     </div>
     <br><br>
+
+    <!-- end driver button section-->
+
+    <!--start Driver table section-->
+    <section class="container">
+        <table class="table table-primary table-hover table-bordered" id="drivertbl">
+            <thead>
+            <tr>
+                <th scope="col">Driver_ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">MobileNumber</th>
+                <th scope="col">Password</th>
+                <th scope="col">Email</th>
+                <th scope="col">Image</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>
+                    <button class="btn btn-danger badge rounded-pill" style="width: 80px;" type="button">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--end Driver table section-->
+
 
 </section>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
