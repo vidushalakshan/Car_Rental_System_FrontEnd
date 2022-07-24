@@ -235,6 +235,11 @@
             top: 50px;
         }
 
+        #paymentbtn {
+            position: relative;
+            right: 6%;
+        }
+
 
     </style>
 </head>
@@ -881,6 +886,20 @@ end driver section
             </div>
         </div>
     </form>
+
+    <!-- end form section-->
+
+    <br><br>
+
+    <!-- start booking button section-->
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="paymentbtn">
+        <button class="btn btn-outline-danger" id="btnAddpayment" type="button">Add Payment</button>
+        <button class="btn btn-outline-info" id="btnUpdatedPayment" type="button">Update Payment</button>
+    </div>
+    <br><br>
+    <!-- end booking button section-->
+
 </section>
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -954,7 +973,7 @@ end driver section
         $("#payment").css("display", "none");
     });
 
-    $("#linkBooking").click(function () {
+    $("#linkPayment").click(function () {
         $("#dashboard").css("display", "none");
         $("#admin").css("display", "none");
         $("#driver").css("display", "none");
