@@ -771,11 +771,12 @@ end driver section
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script>
-    $("#dashboard").css("display", "none");
+    $("#dashboard").css("display", "");
     $("#admin").css("display", "none");
     $("#driver").css("display", "none");
     $("#customer").css("display", "none");
     $("#car").css("display", "none");
+    $("#booking").css("display", "none");
 
     $("#dashboardlink").click(function () {
         $("#dashboard").css("display", "");
@@ -783,6 +784,7 @@ end driver section
         $("#driver").css("display", "none");
         $("#customer").css("display", "none");
         $("#car").css("display", "none");
+        $("#booking").css("display", "none");
     });
 
     $("#adminlink").click(function () {
@@ -791,6 +793,7 @@ end driver section
         $("#driver").css("display", "none");
         $("#customer").css("display", "none");
         $("#car").css("display", "none");
+        $("#booking").css("display", "none");
     });
 
     $("#driverlink").click(function () {
@@ -799,6 +802,7 @@ end driver section
         $("#driver").css("display", "block");
         $("#customer").css("display", "none");
         $("#car").css("display", "none");
+        $("#booking").css("display", "none");
     });
 
     $("#linkCustomers").click(function () {
@@ -807,6 +811,7 @@ end driver section
         $("#driver").css("display", "none");
         $("#customer").css("display", "block");
         $("#car").css("display", "none");
+        $("#booking").css("display", "none");
     });
 
     $("#linkCars").click(function () {
@@ -815,6 +820,16 @@ end driver section
         $("#driver").css("display", "none");
         $("#customer").css("display", "none");
         $("#car").css("display", "block");
+        $("#booking").css("display", "none");
+    });
+
+    $("#linkBooking").click(function () {
+        $("#dashboard").css("display", "none");
+        $("#admin").css("display", "none");
+        $("#driver").css("display", "none");
+        $("#customer").css("display", "none");
+        $("#car").css("display", "none");
+        $("#booking").css("display", "block");
     });
 
 </script>
