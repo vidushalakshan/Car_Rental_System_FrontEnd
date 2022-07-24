@@ -228,6 +228,13 @@
             left: 15%;
         }
 
+        #payment > form > div {
+            width: 82%;
+            position: relative;
+            left: 23%;
+            top: 50px;
+        }
+
 
     </style>
 </head>
@@ -801,6 +808,7 @@ end driver section
                 <th scope="col">Pick_up_Time</th>
                 <th scope="col">Drop_Of_Date</th>
                 <th scope="col">Drop_Off_Time</th>
+                <th scope="col">Rent_Price</th>
                 <th scope="col">Action</th>
             </tr>
             </thead>
@@ -814,6 +822,7 @@ end driver section
                 <td>@mdo</td>
                 <td>@mdo</td>
                 <td>@mdo</td>
+                <td>@mdo</td>
                 <td>
                     <button class="btn btn-danger badge rounded-pill" style="width: 80px;" type="button">Delete</button>
                 </td>
@@ -822,8 +831,57 @@ end driver section
         </table>
     </section>
 </section>
+<br><br>
 
+<!--end booking section-->
 
+<!--start payment section -->
+
+<section class="container" id="payment">
+
+    <!--start form section-->
+
+    <form class="col-md-auto">
+        <div class="card col-12 mx-1">
+            <div class="card-body">
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="examplePayment_ID">Payment_ID :</label>
+                    <input aria-describedby="orderId" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="examplePayment_ID" type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2">
+                    <label class="form-label" >Car_Availability :</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select Booking :</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="mx-3 mt-2 col-5 d-inline-block">
+                        <label class="form-label" for="orderDate">Drop Of Last Date :</label>
+                        <input aria-describedby="orderDate" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                               id=orderDate type="date">
+                </div>
+
+                <div class="form-group col-5 d-inline-block m-lg-2 mx-3">
+                    <label class="form-label" for="txtDamaging_Price">Damaging Price :</label>
+                    <input class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="txtDamaging_Price"
+                           type="text">
+                </div>
+
+                <div class="form-group col-5 d-inline-block mx-3">
+                    <label class="form-label" for="txtDiscount">Discount :</label>
+                    <input aria-describedby="orderId" class="form-control btn-outline-primary bg-light bg-opacity-50 text-dark"
+                           id="txtDiscount" type="text">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
@@ -834,6 +892,7 @@ end driver section
     $("#customer").css("display", "none");
     $("#car").css("display", "none");
     $("#booking").css("display", "none");
+    $("#payment").css("display", "none");
 
     $("#dashboardlink").click(function () {
         $("#dashboard").css("display", "");
@@ -842,6 +901,7 @@ end driver section
         $("#customer").css("display", "none");
         $("#car").css("display", "none");
         $("#booking").css("display", "none");
+        $("#payment").css("display", "none");
     });
 
     $("#adminlink").click(function () {
@@ -851,6 +911,7 @@ end driver section
         $("#customer").css("display", "none");
         $("#car").css("display", "none");
         $("#booking").css("display", "none");
+        $("#payment").css("display", "none");
     });
 
     $("#driverlink").click(function () {
@@ -860,6 +921,7 @@ end driver section
         $("#customer").css("display", "none");
         $("#car").css("display", "none");
         $("#booking").css("display", "none");
+        $("#payment").css("display", "none");
     });
 
     $("#linkCustomers").click(function () {
@@ -869,6 +931,7 @@ end driver section
         $("#customer").css("display", "block");
         $("#car").css("display", "none");
         $("#booking").css("display", "none");
+        $("#payment").css("display", "none");
     });
 
     $("#linkCars").click(function () {
@@ -878,6 +941,7 @@ end driver section
         $("#customer").css("display", "none");
         $("#car").css("display", "block");
         $("#booking").css("display", "none");
+        $("#payment").css("display", "none");
     });
 
     $("#linkBooking").click(function () {
@@ -887,6 +951,17 @@ end driver section
         $("#customer").css("display", "none");
         $("#car").css("display", "none");
         $("#booking").css("display", "block");
+        $("#payment").css("display", "none");
+    });
+
+    $("#linkBooking").click(function () {
+        $("#dashboard").css("display", "none");
+        $("#admin").css("display", "none");
+        $("#driver").css("display", "none");
+        $("#customer").css("display", "none");
+        $("#car").css("display", "none");
+        $("#booking").css("display", "none");
+        $("#payment").css("display", "block");
     });
 
 </script>
